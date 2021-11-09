@@ -115,4 +115,15 @@ const config = {
     }),
 };
 
-module.exports = config;
+
+module.exports = {
+  themeConfig: {
+    navbar: {
+      items: [
+        {
+          type: 'docsVersionDropdown',
+        },
+      ],
+    },
+  },
+};
