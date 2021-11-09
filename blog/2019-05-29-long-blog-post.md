@@ -26,7 +26,21 @@ Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/mar
 Use the power of React to create interactive blog posts.
 
 ```js
-<button onClick={() => alert('button clicked!')}>Click me!</button>
+  import React from 'react';
+
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+  
+  function App(){
+    const notify = () => toast("Wow so easy!");
+
+    return (
+      <div>
+        <button onClick={notify}>Notify!</button>
+        <ToastContainer />
+      </div>
+    );
+  }
 ```
 
 <button onClick={() => alert('button clicked!')}>Click me!</button>
